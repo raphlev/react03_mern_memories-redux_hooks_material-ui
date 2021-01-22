@@ -48,7 +48,7 @@ mongodb/cloud/atlas
 
 # Deploy app
 
-## deploy server to heroku
+## PART01 & PART02: deploy server to heroku
 
 dashboard.heroku.com > signup > new app > rlu-memories-project
 -> download heroku-cli
@@ -83,7 +83,7 @@ https://rlu-memories-project.herokuapp.com/posts
 
 --> server app available from deployed location: xxxxx.herokuapp.com/posts
 
-## client
+## PART01 & PART02: deploy client to heroku
 
 ### connect to heroku
 update index.js
@@ -99,3 +99,5 @@ from explorer, drad and drop the 'build' folder (select the build folder) into a
 --> see netlify app settings : possible to update the domain name
 
 APP IS LIVE FROM THE WEB
+
+## PART03: deploy all to ????????
