@@ -99,3 +99,5 @@ from explorer, drad and drop the 'build' folder (select the build folder) into a
 --> see netlify app settings : possible to update the domain name
 
 APP IS LIVE FROM THE WEB
+
+## PART03: deploy all to ????????
