@@ -149,6 +149,7 @@ Build Settings:
 - Publish directory: client/build
 - Env Variable: SERVER_URL=https://rlu-memories-project.herokuapp.com
 - Set env variable NODE_ENV=production
+- Set env variable CI=false  (to avoid warning treates as error: https://answers.netlify.com/t/new-ci-true-build-configuration-treating-warnings-as-errors-because-process-env-ci-true/14434)
 Click Deploy and go to settings/deploys: Build settings
 - Base directory: client
 - Build command: npm run build
