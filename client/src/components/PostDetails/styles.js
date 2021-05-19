@@ -4,13 +4,13 @@ export default makeStyles((theme) => ({
   media: {
     borderRadius: '20px',
     objectFit: 'cover',
-    width: '50%',
-    margin: 'auto',
+    width: '100%',
     maxHeight: '600px',
 
   },
   card: {
     display: 'flex',
+    flexWrap: 'wrap',
     width: '100%',
     [theme.breakpoints.down('sm')]: {
       flexWrap: 'wrap',
@@ -24,6 +24,8 @@ export default makeStyles((theme) => ({
   },
   imageSection: {
     marginLeft: '20px',
+    marginTop: '50px',
+    flex: 1,
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0,
     },

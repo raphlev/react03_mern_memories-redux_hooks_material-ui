@@ -45,8 +45,10 @@ update api/index.js:
     ? 'http://localhost:5000'
     : 'https://rlu-memories-project.herokuapp.com';
     const API = axios.create({ baseURL: url });
-
 update Auth/Auth.js with new google client ID (see above google credential for client)
+update PostDetails/styles.js
+    card: add flexWrap: 'wrap'
+    imageSection: add  marginTop: '50px' + add flex: 1
 
 ## Init server
 
