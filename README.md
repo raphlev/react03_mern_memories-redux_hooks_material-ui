@@ -39,8 +39,13 @@ remove this line in public/index.html:  <link rel="icon" type="image/png" href="
 update api/index.js:
     import dotenv from 'dotenv';
     dotenv.config();
-    const SERVER_URL = process.env.SERVER_URL|| "http://localhost:5000";
-    const API = axios.create({ baseURL: SERVER_URL });
+    //const SERVER_URL = process.env.SERVER_URL|| "http://localhost:5000";
+    //const API = axios.create({ baseURL: SERVER_URL });
+    const url = (process.env.NODE_ENV !== 'production')
+    ? 'http://localhost:5000'
+    : 'https://rlu-memories-project.herokuapp.com';
+    const API = axios.create({ baseURL: url });
+
 update Auth/Auth.js with new google client ID (see above google credential for client)
 
 ## Init server
