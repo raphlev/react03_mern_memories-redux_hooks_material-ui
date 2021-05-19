@@ -148,6 +148,7 @@ Build Settings:
 - Build command: npm run build
 - Publish directory: client/build
 - Env Variable: SERVER_URL=https://rlu-memories-project.herokuapp.com
+- Set env variable NODE_ENV=production
 Click Deploy and go to settings/deploys: Build settings
 - Base directory: client
 - Build command: npm run build

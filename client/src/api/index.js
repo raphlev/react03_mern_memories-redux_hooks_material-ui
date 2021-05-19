@@ -2,9 +2,13 @@ import axios from 'axios';
 import dotenv from 'dotenv';
 dotenv.config();
 
-const SERVER_URL = process.env.SERVER_URL|| "http://localhost:5000";
+//const SERVER_URL = process.env.SERVER_URL|| "http://localhost:5000";
+//const API = axios.create({ baseURL: SERVER_URL });
+const url = (process.env.NODE_ENV !== 'production')
+  ? 'http://localhost:5000'
+  : 'https://rlu-memories-project.herokuapp.com';
 
-const API = axios.create({ baseURL: SERVER_URL });
+const API = axios.create({ baseURL: url });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {
