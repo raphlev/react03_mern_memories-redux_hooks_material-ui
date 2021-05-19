@@ -145,12 +145,17 @@ Update Site Name to rlu-memories: create same client site domain as indicated in
 
 Build Settings:
 - Repository: https://github.com/raphlev/react03_mern_memories-redux_hooks_material-ui
+- Build command: npm run build
+- Publish directory: client/build
+- Env Variable: SERVER_URL=https://rlu-memories-project.herokuapp.com
+Click Deploy and go to settings/deploys: Build settings
 - Base directory: client
 - Build command: npm run build
 - Publish directory: client/build
 - Deploy log visibility: Logs are public
 - Builds: Active
-- Env Variable: SERVER_URL=https://rlu-memories-project.herokuapp.com
+Update Site Name to:
+- rlu-memories
 
 --> Client running on https://rlu-memories.netlify.app/
 
