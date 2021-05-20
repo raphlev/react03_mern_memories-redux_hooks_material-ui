@@ -47,7 +47,8 @@ update api/index.js:
     const API = axios.create({ baseURL: url });
 update Auth/Auth.js with new google client ID (see above google credential for client)
 update PostDetails/styles.js
-    card: add flexWrap: 'wrap'
+    media: remove objectFit: 'cover' : not needed, width: '100%' makes sure to have full image
+    card>theme.breakpoints.down('sm'): remove flexWrap: 'wrap'
     imageSection: add  marginTop: '50px' + add flex: 1
 
 ## Init server
