@@ -172,3 +172,7 @@ Update Site Name to:
 ## Improvment
 - add package.json in backend directory and move server dependencies and script into this new file
 - update root package.json > "start": "npm run start --prefix backend",
+
+## react-scripts sh: 1: react-scripts: Permission denied
+- https://stackoverflow.com/questions/62140265/npm-run-build-react-scripts-permission-denied
+--> sudo chmod +x node_modules/.bin/react-scripts
