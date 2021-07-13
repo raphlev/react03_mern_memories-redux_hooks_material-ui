@@ -9,6 +9,7 @@ MongoDB Atlas: https://www.mongodb.com/cloud/atlas
 MemDev: https://mem.dev/
 Background: https://www.svgbackgrounds.com/
 Redux-Provider-Reducer: https://tsh.io/blog/react-state-management-react-hooks-vs-redux/
+Github: https://github.com/adrianhajdin/project_mern_memories/branches
 
 ## Introduction
 This is a code repository for the corresponding video tutorial. 
@@ -129,17 +130,24 @@ heroku-cli:
 - heroku login > follow the prompts to connect through the browser (SSH key)
 - cd ../server
 
-If git repo does not exist yet
+Check of Heroku App releases:
+- heroku status --> connected to heroku
+- heroku releases --> shows list of server releases and each deploy previously done
+
+Create Heroku App release (if not exist yet - if previous command returns no releases for this App)
 - git init
 - heroku git:remote -a rlu-memories-project
 
-- git add .  
-- git commit -am "c"
+Add / commit latest changes:
+- git add .   --> add updated file since last commit
+- git commit -am "c"   --> commit last updated file
 
+Check / Add env variable:
 - heroku config  
 - heroku config:set CONNECTION_URL="mongodb+srv://reactMemUser:Mw1NOyXk19m5ASlL@cluster0.tr43l.mongodb.net/memories?retryWrites=true&w=majority"
 - heroku config  
 
+Deploy to Heroku:
 - git push heroku master
 - heroku logs --tail  
 
